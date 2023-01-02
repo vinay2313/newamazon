@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.nav{
+    width: 100%;
+    height: 72px;
+    background-color: #182530;
+    color: #F2F4F6E6;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    justify-content: space-between;
+}
+.browse{
+    display: none;
+}
+.navleft{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+
+}
+.navright{
+    
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-size: 17px;
+    margin: 0 8px;
+}
+.navbtn{
+    width: 122px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f79af;
+    border: none;
+    border-radius: 2px;
+    font-size: 17px;
+    color: #F2F4F6E6;
+}
+.navright li{
+   
+    padding:  0 3px;
+}
+i{
+    font-size: 20px;
+}
+select{
+    background: none;
+    border: none;
+    color: #F2F4F6E6;
+    font-size: 17px;
+    
+}
+option p{
+   
+    color: #F2F4F6E6;
+    
+}
+.navdiv{
+    display: flex;
+}
+.navimg{
+    width: 112px;
+    height: 38px;
+    margin-right: 10px;
+    background-color:  #182530;
+}
+.bi-caret-down-fill{
+    font-size: 10px;
+ position: relative;
+ top: -4px;
+}
+
+
+
+
+
+/*media qurry*/
+/*navbar*/
+@media screen and (max-width:1040px) {
+
+    .navleft{
+        display: none;
+    }
+    .browse{
+        display: block;
+        
+    }
+   
+    
+}
+@media screen and (max-width:880px){
+    .navbtn{
+        display: none;
+    }
+}
+@media screen and (max-width:480px){
+    .lang{
+        display: none;
+    }
+}
+
+
+
+
+/*page1*/
+.page1{
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-image: url("page1.jpg");
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    box-shadow: inset 42vw 0vw 6vw rgb(0, 0, 0);
+
+}
+.page1main{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.page1res{
+    display:none;
+}
+.p1box1{
+    width: 100%;
+}   
+
+   
+.p1box1-1{
+    width: 50%;
+    padding: 83px 64px;
+    color: #fff;
+    
+}
+.heading{
+    font-size: 40px;
+    font-weight: 300;
+  padding: 20px 0;
+}
+
+.p1btn{
+    width: 280px;
+    height: 48px;
+    background-color: #0f79af;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin: 10px 0;
+}
+.p1p2
+{
+    font-size: 13px;
+    padding-left: 48px;
+}
+
+.p1p1{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+
+/*page2*/
+.page2{
+    background-image: url("page2.jpg");
+}
+.p2p1{
+    padding-bottom: 30px;
+}
+
+
+
+ /*page3*/
+ .page3{
+    width: 100%;
+    height: auto;
+    color: black;
+    display: flex;
+ }
+ .p3box1{
+    width: 50%;
+    color: black;
+    padding: 2% 5%;
+ }
+ .p3box1-1
+ {
+    width: 100%;
+    
+ }
+ .p3box2{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+ }
+ .img{
+     width: 200px;
+    
+    margin: 3px;
+ }
+ .img:hover{
+    box-shadow: 1px 1px 15px 8px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 7px 5px rgba(0,0,0,0.75);
+ }
+
+
+
+ /*page 4*/
+ .page4{
+ width: 100%;
+ display: flex;
+ background-image: url(prime.jpg);
+ }
+.page4res{
+    
+    width: 50%;
+}
+.p4box1{
+    width: 50%;
+}
+.p4box1-1{
+    width: 100%;
+}
+/*page5*/
+.page5{
+    width: 100%;
+    background-image:url(bheem.jpg);
+    background-position: 50% 70%;
+    background-size: cover;
+}
+.flogo{
+    width: 100%;
+    
+    background-color: rgb(37, 33, 33);
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+ padding: 25px 2% 50px 2%;
+ text-align: center;
+
+
+ font-size: 15px;
+  }
+  a{
+    text-decoration:none;
+    color: #0f79af;
+  }
+  .flogospan{
+    color: rgb(121, 116, 116);
+   
+  }
+ 
+
+
+
+
+
+
+
+
+@media screen and (max-width:760px){
+    .page1{
+        width: 100%;
+        height: auto;
+        background: none;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .page1res{
+        display: block;
+        width: 100%;
+        height: 180px;
+       
+        background-image: url("page1.jpg");
+        background-position: 100% 0%;
+        background-size: cover;
+
+        
+    }
+    .p1box1{
+        width: 100%;
+        background-color: rgb(5, 5, 5);
+        box-shadow: 0px -10px 15px rgb(5, 5, 5);
+        padding: 20px;
+    }
+    .p1box1-1{
+        width: 100%;
+       
+        padding: 0 ;
+        margin: 0 ;
+        
+        text-align: center;
+        
+    }
+    .p1p2{
+        padding: 0;
+        margin: 0;
+    }
+       .p1btn{
+        width: 100%;
+       } 
+    
+       .page2res{
+        background-image: url(page2.jpg);
+       }
+       
+
+
+       /*page 3*/
+       .page3{
+        flex-direction: column;
+       }
+       .p3box1,.p3box1-1,.p3box2{
+        width: 100%;
+        text-align: center;
+       }
+       
+       .page4{
+        background: none;
+        flex-direction: column;
+       }
+       .page4res{
+        width: 100%;
+        height: 300px;
+        background-image: url(newPrime.jpg);
+        background-position: 0% 30%;
+        background-size:cover ;
+       }
+
+       .page5{
+        display: flex;
+        flex-direction: column-reverse;
+        background: none;
+       }
+       .page5res{
+        height: 380px;
+        background-image: url(newbheem.jpg);
+        background-position: 60% 20%;
+       }
+
+       
+
+}
+@media screen and (max-width:290px){
+    li{
+        margin: 0;
+        padding: 0;
+    }
+}
